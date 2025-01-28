@@ -13,7 +13,7 @@ body{
     background: linear-gradient(90deg, #1e1e22, #2e2e2e); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     transition: background 0.3s ease; 
-    padding: 10px 0;
+    padding: 10px 15px;
 }
 
 .custom_nav-container:hover {
@@ -49,6 +49,7 @@ transition: background-color 0.3s ease, transform 0.3s ease;
   margin: 0.5px;
   width: 4rem;
 }
+
 
 /*projects section */
 
@@ -449,37 +450,59 @@ body{margin-top:20px;}
 @media (max-width: 768px) {
   ul.lenguage-code {
       align-items: flex-start;
+      display: flex;
+      justify-content: center;
       gap: 0.5rem;
   }
 }
 
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .w-50{
+    width: 90% !important;
+  }
+
+  .btn-outline-primary{
+    margin-bottom: 1.5rem;
+  }
+}
+
+
 #accordion .panel{
   border: none;
-  border-radius: 5px;
+  border-radius: 1rem;
   box-shadow: none;
-  margin-bottom: 10px;
+  margin-bottom: 1.5rem;
   background: transparent;
 }
 #accordion .panel-heading{
   padding: 0;
   border: none;
-  border-radius: 5px;
+  border-radius: 1rem;
   background: transparent;
   position: relative;
 }
 #accordion .panel-title a{
   text-decoration: none;
   display: block;
-  padding: 20px 30px;
+  padding: 1.3rem 1.4rem;
   margin: 0;
   background: rgba(0,0,0,0.4);
-  font-size: 17px;
+  font-size: 60%;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.4rem;
   position: relative;
 }
 #accordion .panel-title a.collapsed{ border: none; }
@@ -487,16 +510,16 @@ body{margin-top:20px;}
 #accordion .panel-title a.collapsed:before{
   content: "\f107";
   font-family: "Font Awesome 5 Free";
-  width: 30px;
-  height: 30px;
+  width: 1.2em;
+  height: 1.4rem;
   line-height: 27px;
   text-align: center;
-  font-size: 25px;
+  font-size: 1rem;
   font-weight: 900;
   color: #fff;
   position: absolute;
-  top: 15px;
-  right: 30px;
+  top: 1rem;
+  right: 1.5rem;
   transform: rotate(180deg);
   transition: all .4s cubic-bezier(0.080, 1.090, 0.320, 1.275);
 }
@@ -505,14 +528,14 @@ body{margin-top:20px;}
   transform: rotate(0deg);
 }
 #accordion .panel-body{
-  padding: 20px 30px;
+  padding: 1.3rem 1.4rem;
   background: rgba(0,0,0,0.1);
-  font-size: 15px;
+  font-size: 0.9rem;
   color: #fff;
-  line-height: 28px;
+  line-height: 1.7rem;
   letter-spacing: 1px;
   border-top: none;
-  border-radius: 5px;
+  border-radius: 0.7rem;
 }
 
 /*footer*/
