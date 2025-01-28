@@ -50,19 +50,6 @@ transition: background-color 0.3s ease, transform 0.3s ease;
   width: 4rem;
 }
 
-a:hover {
-    color: #00d5ff; 
-    transform: scale(1.1); 
-    }
-    
-
-a{
-    border: none;
-    background-color: #00d5ff;
-    color: #141415;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
 /*projects section */
 
 ul.lenguage-code {
