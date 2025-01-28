@@ -131,10 +131,15 @@ body{margin-top:20px;}
 }
 @media (max-width: 767px) {
   .about-text h3 {
-    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    
   }
 }
 .about-text h4 {
+  display: flex;
+  justify-content: center;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -145,6 +150,7 @@ body{margin-top:20px;}
 }
 .about-text p {
   font-size: 18px;
+  text-align: center;
 }
 .about-text p mark {
   font-weight: 600;
@@ -324,13 +330,18 @@ body{margin-top:20px;}
   margin-top: 20px;
 }
 
-/*animation hero*/
 
 @media (max-width: 767px) {
   .contact-form .send {
     margin-bottom: 20px;
   }
+
+  .contact-name{
+    padding-top: 2rem;
+  }
 }
+
+/*animation hero*/
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
 .hero {
@@ -456,11 +467,26 @@ body{margin-top:20px;}
   }
 }
 
-@media (max-width: 768px) {
-
-}
 
 @media (max-width: 768px) {
+  .subtitle{
+    text-align: center;
+  }
+
+  .btn-bar{
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-personal{
+    display: flex;
+    justify-content: center;
+  }
+  .title3{
+    display: flex;
+    justify-content: center;
+  }
+
   .d-flex {
     flex-direction: column;
     align-items: center;
