@@ -107,9 +107,18 @@
     <section class="section" id="projects">
         <div class="container">
             <div class="row py-5 mb-2 bg-dark text-white">
-                <h1>Proyectos</h1>
+                    <h1>Proyectos</h1>
+                    <select class="form-select form-select-lg mb-3 comboBox" aria-label=".form-select-lg example" id="projectFilter">
+                        <option value="all" selected>Todos</option>
+                        <option value="web">Web</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="all">Todos</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>                   
+                    </select>
                 <div class="row row-cols-1">
-                    <div class="col">
+                    <div class="col" data-category="java 2024">
                         <hr class="hr hr-blurry">
                         <div class="lc-block">
                             <h6 class="title">2024</h6>
@@ -131,30 +140,30 @@
                             </ul>
                             <div class="container d-flex gap-4">
                                 <!-- Acordeón a la izquierda -->
-                                <div class="panel-group w-50" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel-group w-50" id="accordion1" role="tablist" aria-multiselectable="true">
                                     <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingOne">
+                                        <div class="panel-heading" role="tab" id="headingOne1">
                                             <h4 class="panel-title">
-                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <a role="button" data-toggle="collapse" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
                                                     Documentacion     
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                        <div id="collapseOne1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne1">
                                             <div class="panel-body">
                                                 <p>Estamos en proceso de terminarla</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                        <div class="panel-heading" role="tab" id="headingTwo1">
                                             <h4 class="panel-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
                                                     Probar
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div id="collapseTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo1">
                                             <div class="panel-body">
                                                 <li><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-white" href="/content/pacman 1.0.rar" download="">Descarga la version 1.0.0 (requiere java)</a></li>
                                             </div>
@@ -162,32 +171,29 @@
                                     </div>
                                 </div>
                                 <!-- Carrusel a la derecha -->
-                                <div id="carouselZero" class="carousel slide" data-bs-ride="true">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="/img/pacmanmenu.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/img/pacman1.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/img/pacman2.png" class="d-block w-100" alt="...">
-                                        </div>
+                                <div id="carouselPacman" class="carousel slide carousel-fade rounded shadow" data-bs-ride="carousel">
+                                  <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselPacman" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselPacman" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselPacman" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  </div>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="/img/pacmanmenu.png" class="d-block w-100" alt="Pacman menú">
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <div class="carousel-item">
+                                      <img src="/img/pacman1.png" class="d-block w-100" alt="Pacman juego 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="/img/pacman2.png" class="d-block w-100" alt="Pacman juego 2">
+                                    </div>
+                                  </div>
                                 </div>     
                             </div>                                       
                             <hr class="hr hr-blurry">
                         </div>
                     </div>                    
-                    <div class="col">
+                    <div class="col" data-category="web 2024">
                         <h6 class="title">2024</h6>
                         <h3 class="title3">Limitado a la red Pagina</h3>
                         <div class="d-flex justify-content-between align-items-center">
@@ -219,30 +225,30 @@
                         </ul>
                         <div class="container d-flex gap-4">
                             <!-- Acordeón a la izquierda -->
-                            <div class="panel-group w-50" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel-group w-50" id="accordion2" role="tablist" aria-multiselectable="true">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne">
+                                    <div class="panel-heading" role="tab" id="headingOne2">
                                         <h4 class="panel-title">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <a role="button" data-toggle="collapse" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
                                                 Documentacion
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne2">
                                         <div class="panel-body">
                                             <p>Estamos en proceso de terminarla</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                    <div class="panel-heading" role="tab" id="headingTwo2">
                                         <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                                                 Mirar
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
                                         <div class="panel-body">
                                             <p></p>
                                         </div>
@@ -250,28 +256,24 @@
                                 </div>
                             </div>
                             <!-- Carrusel a la derecha -->
-                            <div id="carouselOne" class="carousel slide" data-bs-ride="true">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="/img/limitadored.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/img/limitadored2.png" class="d-block w-100" alt="...">
-                                    </div>
+                            <div id="carouselLimitado" class="carousel slide carousel-fade rounded shadow" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="/img/limitadored.png" class="d-block w-100" alt="Limitado red 1">
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                <div class="carousel-item">
+                                  <img src="/img/limitadored2.png" class="d-block w-100" alt="Limitado red 2">
+                                </div>
+                              </div>
                             </div>     
                         </div>   
                         <hr class="hr hr-blurry">
                     </div>
-                    <div class="col">
+                    <div class="col" data-category="web 2024">
                         <h6 class="title">2024</h6>
                         <h3 class="title3">Artesanal Cocina Pagina</h3>
                         <div class="d-flex justify-content-between align-items-center">
@@ -310,30 +312,30 @@
                         </ul>
                         <div class="container d-flex gap-4">
                             <!-- Acordeón a la izquierda -->
-                            <div class="panel-group w-50" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel-group w-50" id="accordion3" role="tablist" aria-multiselectable="true">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne">
+                                    <div class="panel-heading" role="tab" id="headingOne3">
                                         <h4 class="panel-title">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <a role="button" data-toggle="collapse" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
                                                 Documentacion
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div id="collapseOne3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne3">
                                         <div class="panel-body">
                                             <p>Estamos en proceso de terminarla</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                    <div class="panel-heading" role="tab" id="headingTwo3">
                                         <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <a class="collapsed" role="button" data-toggle="collapse"  href="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
                                                 Mirar
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div id="collapseTwo3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo3">
                                         <div class="panel-body">
                                             <p></p>
                                         </div>
@@ -341,28 +343,24 @@
                                 </div>
                             </div>
                             <!-- Carrusel a la derecha -->
-                            <div id="carouselTwo" class="carousel slide" data-bs-ride="true">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="/img/artesanal1.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/img/artesanal2.png" class="d-block w-100" alt="...">
-                                    </div>
+                            <div id="carouselArtesanal" class="carousel slide carousel-fade rounded shadow" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="/img/artesanal1.png" class="d-block w-100" alt="Artesanal 1">
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                <div class="carousel-item">
+                                  <img src="/img/artesanal2.png" class="d-block w-100" alt="Artesanal 2">
+                                </div>
+                              </div>
                             </div>     
                         </div>   
                         <hr class="hr hr-blurry">
                     </div>
-                    <div class="col">
+                    <div class="col" data-category="java 2024">
                         <h6 class="title">2024</h6>
                         <h3 class="title3">Snake Juego</h3>
                         <div class="d-flex justify-content-between align-items-center">
@@ -380,30 +378,30 @@
                         </ul>
                         <div class="container d-flex gap-4">
                             <!-- Acordeón a la izquierda -->
-                            <div class="panel-group w-50" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel-group w-50" id="accordion4" role="tablist" aria-multiselectable="true">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne">
+                                    <div class="panel-heading" role="tab" id="headingOne4">
                                         <h4 class="panel-title">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <a role="button" data-toggle="collapse"  href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
                                                 Documentacion
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div id="collapseOne4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne4">
                                         <div class="panel-body">
                                             <p>Estamos en proceso de terminarla</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                    <div class="panel-heading" role="tab" id="headingTwo4">
                                         <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
                                                 Mirar
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div id="collapseTwo4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo4">
                                         <div class="panel-body">
                                             <p></p>
                                         </div>
@@ -411,23 +409,19 @@
                                 </div>
                             </div>
                             <!-- Carrusel a la derecha -->
-                            <div id="carouselThree" class="carousel slide" data-bs-ride="true">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="/img/snakegame.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/img/snake1.png" class="d-block w-100" alt="...">
-                                    </div>
+                            <div id="carouselSnake" class="carousel slide carousel-fade rounded shadow" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselThree" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselThree" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="/img/snakegame.png" class="d-block w-100" alt="Snake 1">
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                <div class="carousel-item">
+                                  <img src="/img/snake1.png" class="d-block w-100" alt="Snake 2">
+                                </div>
+                              </div>
                             </div>     
                         </div>   
                     </div>
@@ -466,7 +460,7 @@
             </div>
             <div class="card-lenguage about-text">
                 <h3>Skills</h3>
-                <ul class="lenguage-code">
+                <ul class="lenguage-code justify-content-center">
                     <li class="coding">
                         <button class="btn btn-primary position-relative ">
                             <svg class="icon" width="24" height="24">

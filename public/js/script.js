@@ -1,32 +1,38 @@
-function initCarousel(carouselId, intervalTime = 3000) {
+function initCarousel(carouselId, intervalTime = 4000, useFade = true) {
     var carouselElement = document.getElementById(carouselId);
-    if (carouselElement) {
-      var myCarousel = new bootstrap.Carousel(carouselElement, {
-        interval: intervalTime,  // Tiempo entre cambios de diapositivas
-        pause: 'hover',          // Pausa al pasar el mouse
-        wrap: true               // Vuelve a la primera diapositiva después de la última
-      });
-
-      // Control manual con botones adicionales
-      carouselElement.querySelector('.carousel-control-prev').addEventListener('click', function () {
-        myCarousel.prev();
-      });
-
-      carouselElement.querySelector('.carousel-control-next').addEventListener('click', function () {
-        myCarousel.next();
-      });
-
-      console.log(`Carrusel ${carouselId} inicializado.`);
-    } else {
-      console.warn(`No se encontró el carrusel con ID: ${carouselId}`);
+    if (!carouselElement) {
+        console.warn(`No se encontró el carrusel con ID: ${carouselId}`);
+        return;
     }
+
+    // Añadir clase fade si se solicita
+    if (useFade && !carouselElement.classList.contains('carousel-fade')) {
+        carouselElement.classList.add('carousel-fade');
+    }
+
+    var myCarousel = new bootstrap.Carousel(carouselElement, {
+        interval: intervalTime,
+        pause: 'hover',
+        wrap: true
+    });
+
+    // Indicadores
+    var indicators = carouselElement.querySelectorAll('.carousel-indicators [data-bs-slide-to]');
+    indicators.forEach(function (indicator, idx) {
+        indicator.addEventListener('click', function (e) {
+            e.preventDefault();
+            myCarousel.to(idx);
+        });
+    });
+
+    console.log(`Carrusel ${carouselId} inicializado.`);
 }
 
-  // Inicializar múltiples carruseles
-initCarousel('carouselZero', 5000); 
-initCarousel('carouselOne', 5000); 
-initCarousel('carouselTwo', 5000);
-initCarousel('carouselThree', 5000);
+// Inicializar múltiples carruseles
+initCarousel('carouselPacman', 4000, true);
+initCarousel('carouselLimitado', 4000, true);
+initCarousel('carouselArtesanal', 4000, true);
+initCarousel('carouselSnake', 4000, true);
 
 
 function redirectToWhatsApp(event) {
@@ -44,3 +50,22 @@ function redirectToWhatsApp(event) {
   window.open(whatsappURL, '_blank');
 
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    var filter = document.getElementById('projectFilter');
+    if (!filter) return;
+
+    filter.addEventListener('change', function () {
+        var selected = this.value;
+        var projects = document.querySelectorAll('.row-cols-1 > .col');
+
+        projects.forEach(function (project) {
+            var categories = (project.getAttribute('data-category') || '').split(' ');
+            if (selected === 'all' || categories.includes(selected)) {
+                project.style.display = '';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    });
+});
