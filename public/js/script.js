@@ -69,3 +69,53 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+const mindmap = document.querySelector('.mindmap');
+const center = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+
+const branches = document.querySelectorAll('.branch');
+const radius = 200;
+
+  // Posicionar ramas principales radialmente
+branches.forEach((branch, i) => {
+    const angle = (i / branches.length) * Math.PI * 2;
+    const x = center.x + radius * Math.cos(angle);
+    const y = center.y + radius * Math.sin(angle);
+    branch.style.left = `${x}px`;
+    branch.style.top = `${y}px`;
+});
+
+branches.forEach((branch) => {
+    branch.addEventListener('click', () => {
+      const id = branch.dataset.target;
+      const subnodeContainer = document.getElementById(id);
+
+      // Cerrar otros subnodos
+      document.querySelectorAll('.subnodes').forEach(el => {
+        if (el !== subnodeContainer) el.style.display = 'none';
+      });
+
+      // Alternar este
+      const visible = subnodeContainer.style.display === 'block';
+      subnodeContainer.style.display = visible ? 'none' : 'block';
+
+      // Posicionarlo cerca de su rama
+      const branchX = parseFloat(branch.style.left);
+      const branchY = parseFloat(branch.style.top);
+      subnodeContainer.style.left = `${branchX}px`;
+      subnodeContainer.style.top = `${branchY}px`;
+
+      // Posicionar nodos secundarios en círculo
+      const nodes = subnodeContainer.querySelectorAll('div');
+      const r2 = 80;
+      nodes.forEach((node, i) => {
+        const angle = (i / nodes.length) * Math.PI * 2;
+        const x = r2 * Math.cos(angle);
+        const y = r2 * Math.sin(angle);
+        node.style.left = `${x}px`;
+        node.style.top = `${y}px`;
+      });
+    });
+});
+
+

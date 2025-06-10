@@ -7,17 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/stylesheets.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Hejembert Portfolio</title>
+    <!-- Agrega esto en el <head> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+
+    <title>Incio - Hejembert J</title>
 </head>
 <body>
-    <div hidden>
-    <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"><symbol id="icon-coffee" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-coffee"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1" /><path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" /><path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" /><path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" /><path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" /></symbol></svg>
-    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"><symbol id="icon-javascript" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-javascript"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M7.5 8h3v8l-2 -1" /><path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" /></symbol></svg>
-    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"><symbol id="icon-html5" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-html5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></symbol></svg>
-    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"><symbol id="icon-css3" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-css3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></symbol></svg>
-    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"><symbol id="icon-spread" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-spreadsheet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M8 11h8v7h-8z" /><path d="M8 15h8" /><path d="M11 11v7" /></symbol></svg>
-    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"><symbol id="icon-python" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-python"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" /><path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" /><path d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4" /><path d="M11 6l0 .01" /><path d="M13 18l0 .01" /></symbol></svg>
-    </div>
     <div class="hero"> 
         <div class="cube"></div>
         <div class="cube"></div>
@@ -60,25 +57,15 @@
                     <div class="row py-5 mb-2 bg-dark text-white">
                         <div class="col-lg-1 d-none d-lg-flex align-items-center">
                             <div class="lc-block d-flex" style="writing-mode: vertical-rl; transform:rotate(180deg)">
-                                <a class="btn btn-link my-2 text-white text-decoration-none" href="#" role="button">Youtube</a>
-                                <a class="btn btn-link my-4 text-white text-decoration-none" href="#" role="button">LinkedIn</a>
+                                <a class="btn btn-link my-2 text-white text-decoration-none" href="https://www.youtube.com/@Hejembert" role="button" target="_blank">Youtube</a>
+                                <a class="btn btn-link my-4 text-white text-decoration-none" href="http://www.linkedin.com/in/hejembert-jaramillo-a59006320" role="button" target="_blank">LinkedIn</a>
                             </div><!-- /lc-block -->
                         </div><!-- /col -->
-                        <div class="col-sm-6 d-flex d-lg-none flex-sm-column align-items-center justify-content-around mb-4 mb-sm-0">
-                            <div class="lc-block">
-                                <a class="btn btn-link text-dark text-decoration-none" href="#" role="button">Youtube</a>
-            
-                            </div>
-                            <div class="lc-block">
-                                <a class="btn btn-link text-dark text-decoration-none" href="#" role="button">LinkedIn</a>
-            
+                        <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
+                            <div class="lc-block ratio ratio-1x1" style="max-width: 400px; width: 100%;">
+                                <img style="object-fit:cover" class="img-fluid mx-auto d-block" src="/img/H1 WHITE.png" alt="Hejembert-Photo">
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="lc-block ratio ratio-1x1">
-                                <img style="object-fit:cover" class="img-fluid" src="/img/H1 WHITE.png" alt="Hejembert-Photo">
-                            </div><!-- /lc-block -->
-                        </div><!-- /col -->
                         <div class="col-lg-4 offset-lg-1">
                             <div class="lc-block my-5">
                                 <div editable="rich">
@@ -107,19 +94,10 @@
     <section class="section" id="projects">
         <div class="container">
             <div class="row py-5 mb-2 bg-dark text-white">
-                    <h1>Proyectos</h1>
-                    <select class="form-select form-select-lg mb-3 comboBox" aria-label=".form-select-lg example" id="projectFilter">
-                        <option value="all" selected>Todos</option>
-                        <option value="web">Web</option>
-                        <option value="java">Java</option>
-                        <option value="python">Python</option>
-                        <option value="all">Todos</option>
-                        <option value="2025">2025</option>
-                        <option value="2024">2024</option>                   
-                    </select>
+                    <h1>Proyectos recientes</h1>
                 <div class="row row-cols-1">
                     <div class="col" data-category="java 2024">
-                        <hr class="hr hr-blurry">
+                        <hr class="rounded">
                         <div class="lc-block">
                             <h6 class="title">2024</h6>
                             <h3 class="title3">Pac-Man Multijugador Juego</h3>
@@ -130,13 +108,7 @@
                                 <button class="btn btn-outline-primary">Resultado</button>
                             </div>
                             <ul class="lenguage-code">
-                                <li class="coding">
-                                    <button class="btn btn-danger position-relative ">
-                                        <svg class="icon" width="24" height="24">
-                                            <use xlink:href="#icon-coffee"></use>
-                                        </svg> Java
-                                    </button>
-                                </li>
+                                <button class="btn btn-rojo position-relative"><li><i class="fab fa-java"></i> Java</li></button>
                             </ul>
                             <div class="container d-flex gap-4">
                                 <!-- Acordeón a la izquierda -->
@@ -190,7 +162,7 @@
                                   </div>
                                 </div>     
                             </div>                                       
-                            <hr class="hr hr-blurry">
+                            <hr class="rounded">
                         </div>
                     </div>                    
                     <div class="col" data-category="web 2024">
@@ -201,27 +173,9 @@
                             <button class="btn btn-outline-primary">Resultado</button>
                         </div>
                         <ul class="lenguage-code">
-                            <li class="coding">
-                                <button class="btn btn-secondary position-relative ">
-                                    <svg class="icon" width="24" height="24">
-                                        <use xlink:href="#icon-html5"></use>
-                                    </svg> Html
-                                </button>
-                            </li>
-                            <li class="coding">
-                                <button class="btn btn-primary position-relative ">
-                                    <svg class="icon" width="24" height="24">
-                                        <use xlink:href="#icon-css3"></use>
-                                    </svg> Css
-                                </button>
-                            </li>
-                            <li class="coding">
-                                <button class="btn btn-warning position-relative ">
-                                    <svg class="icon" width="24" height="24">
-                                        <use xlink:href="#icon-javascript"></use>
-                                    </svg> Javascript
-                                </button>
-                            </li>
+                            <button class="btn btn-sapote position-relative"><li><i class="fab fa-html5"></i> HTML</li></button>
+                            <button class="btn btn-azul position-relative"><li><i class="fab fa-css3-alt"></i> CSS</li></button>
+                            <button class="btn btn-amarillo position-relative"><li><i class="fab fa-js"></i> JavaScript</li></button>
                         </ul>
                         <div class="container d-flex gap-4">
                             <!-- Acordeón a la izquierda -->
@@ -250,7 +204,7 @@
                                     </div>
                                     <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
                                         <div class="panel-body">
-                                            <p></p>
+                                            <p>Muy pronto</p>
                                         </div>
                                     </div>
                                 </div>
@@ -271,7 +225,7 @@
                               </div>
                             </div>     
                         </div>   
-                        <hr class="hr hr-blurry">
+                        <hr class="rounded">
                     </div>
                     <div class="col" data-category="web 2024">
                         <h6 class="title">2024</h6>
@@ -281,34 +235,10 @@
                             <button class="btn btn-outline-primary">Resultado</button>
                         </div>
                         <ul class="lenguage-code">
-                            <li class="coding">
-                                <button class="btn btn-secondary position-relative ">
-                                    <svg class="icon" width="24" height="24">
-                                        <use xlink:href="#icon-html5"></use>
-                                    </svg> Html
-                                </button>
-                            </li>
-                            <li class="coding">
-                                <button class="btn btn-primary position-relative ">
-                                    <svg class="icon" width="24" height="24">
-                                        <use xlink:href="#icon-css3"></use>
-                                    </svg> Css
-                                </button>
-                            </li>
-                            <li class="coding">
-                                <button class="btn btn-warning position-relative ">
-                                    <svg class="icon" width="24" height="24">
-                                        <use xlink:href="#icon-javascript"></use>
-                                    </svg> Javascript
-                                </button>
-                            </li>
-                            <li class="coding">
-                                <button class="btn btn-success position-relative ">
-                                    <svg class="icon" width="24" height="24">
-                                        <use xlink:href="#icon-spread"></use>
-                                    </svg> Sheets
-                                </button>
-                            </li>
+                                <button class="btn btn-sapote position-relative"><li><i class="fab fa-html5"></i> HTML</li></button>
+                                <button class="btn btn-azul position-relative"><li><i class="fab fa-css3-alt"></i> CSS</li></button>
+                                <button class="btn btn-amarillo position-relative"><li><i class="fab fa-js"></i> JavaScript</li></button>
+                                <button class="btn btn-success position-relative ">Sheets</button>
                         </ul>
                         <div class="container d-flex gap-4">
                             <!-- Acordeón a la izquierda -->
@@ -337,7 +267,7 @@
                                     </div>
                                     <div id="collapseTwo3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo3">
                                         <div class="panel-body">
-                                            <p></p>
+                                            <p>Muy pronto</p>
                                         </div>
                                     </div>
                                 </div>
@@ -358,7 +288,7 @@
                               </div>
                             </div>     
                         </div>   
-                        <hr class="hr hr-blurry">
+                        <hr class="rounded">
                     </div>
                     <div class="col" data-category="java 2024">
                         <h6 class="title">2024</h6>
@@ -368,13 +298,7 @@
                             <button class="btn btn-outline-primary">Resultado</button>
                         </div>
                         <ul class="lenguage-code">
-                            <li class="coding">
-                                <button class="btn btn-danger position-relative ">
-                                    <svg class="icon" width="24" height="24">
-                                        <use xlink:href="#icon-coffee"></use>
-                                    </svg> Java
-                                </button>
-                            </li>
+                            <button class="btn btn-rojo position-relative"><li><i class="fab fa-java"></i> Java</li></button>
                         </ul>
                         <div class="container d-flex gap-4">
                             <!-- Acordeón a la izquierda -->
@@ -403,7 +327,7 @@
                                     </div>
                                     <div id="collapseTwo4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo4">
                                         <div class="panel-body">
-                                            <p></p>
+                                            <p>Muy pronto</p>
                                         </div>
                                     </div>
                                 </div>
@@ -429,74 +353,47 @@
             </div>
         </div>
     </section>
-    <section class="section about-section gray-bg" id="about">
-        <div class="container">
-            <div class="row align-items-center justify-content-around flex-row-reverse">
-                <div class="col-lg-6">
+    <section class="section about-section bg-dark text-white position-relative overflow-hidden" id="about">
+        <video muted autoplay loop>
+            <source src="/img/programming2.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+        <div class="capa"></div>
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="row align-items-center justify-content-around">
+                <!-- Columna: Acerca de mí (Texto con imagen) -->
+                <div class="col-lg-6 order-1 order-lg-1">
                     <div class="about-text">
-                        <h3 class="dark-color">Acerca de mi</h3>
+                        <h3 class="dark-color">Acerca de mí</h3>
                         <h4 class="theme-color">Ingeniero en Sistemas &amp; Programador</h4>
-                        <p>Soy estudiante de ingenieria en sistemas, me gusta la programacion
-                            las matematicas, el ajedrez y la musica. Me gusta participar en diversos
-                            proyectos tanto como aplicaciones o de desarrollo web.</p>
-                        <h4 class="theme-color">Informacion</h4>
-                        <ul class="info">
-                            <li class="info-personal"><span>Nacionalidad:</span> Colombiana</li>
-                            <li class="info-personal"><span>Edad:</span> 18 años</li>
-                            <li class="info-personal"><span>Telefono:</span> +57 3136749128</li>
-                            <li class="info-personal"><span>Email:</span> hejembert@gmail.com</li>
-                        </ul>
-                        <div class="btn-bar">
-                            <a class="px-btn theme" href="https://drive.google.com/drive/folders/1R-pC9f9FR1OJQ85K2Wqz7K-LRDLmmn27?usp=drive_link" target="_blank">Certificados</a>
-                            <a class="px-btn theme-t" href="/content/MyCv.pdf" target="_blank">Mirar CV</a>
+                        <div class="about-img-wrapper">
+                            <div class="about-img">
+                                <img src="/img/hejembert.png" alt="Hejembert Jaramillo" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center">
-                    <div class="about-img">
-                        <img src="/img/myAvatar2.png">
+                <!-- Columna: Descripción personal -->
+                <div class="col-lg-6 order-2 order-lg-2">
+                    <div class="about-text">
+                        <p>Hola, soy Hejembert Jaramillo, un estudiante de ingeniería en sistemas apasionado por la programación y el desarrollo de software. Me encanta aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer profesionalmente.</p>
+                        <p>En mi tiempo libre, disfruto explorar proyectos de código abierto y contribuir a la comunidad tecnológica. Siempre estoy buscando oportunidades para mejorar mis habilidades y aprender de otros desarrolladores.</p>
+                        <p>Si estás interesado en colaborar o simplemente quieres charlar sobre tecnología, ¡no dudes en contactarme!</p>
                     </div>
                 </div>
-            </div>
-            <div class="card-lenguage about-text">
-                <h3>Skills</h3>
-                <ul class="lenguage-code justify-content-center">
-                    <li class="coding">
-                        <button class="btn btn-primary position-relative ">
-                            <svg class="icon" width="24" height="24">
-                                <use xlink:href="#icon-python"></use>
-                            </svg> Python
-                        </button>
-                    </li>
-                    <li class="coding">
-                        <button class="btn btn-primary position-relative ">
-                            <svg class="icon" width="24" height="24">
-                                <use xlink:href="#icon-coffee"></use>
-                            </svg> Java
-                        </button>
-                    </li>
-                    <li class="coding">
-                        <button class="btn btn-primary position-relative ">
-                            <svg class="icon" width="24" height="24">
-                                <use xlink:href="#icon-html5"></use>
-                            </svg> Html
-                        </button>
-                    </li>
-                    <li class="coding">
-                        <button class="btn btn-primary position-relative ">
-                            <svg class="icon" width="24" height="24">
-                                <use xlink:href="#icon-css3"></use>
-                            </svg> Css
-                        </button>
-                    </li>
-                    <li class="coding">
-                        <button class="btn btn-primary position-relative ">
-                            <svg class="icon" width="24" height="24">
-                                <use xlink:href="#icon-javascript"></use>
-                            </svg> Javascript
-                        </button>
-                    </li>
-                </ul>
+                <!-- Columna: Habilidades -->
+                <div class="col-lg-6 order-3 order-lg-3">
+                    <div class="about-text">
+                        <h3 class="dark-color">Habilidades</h3>
+                        <ul class="list-unstyled skill-list">
+                            <button class="btn btn-amarillo position-relative"><li><i class="fab fa-js"></i> JavaScript</li></button>
+                            <button class="btn btn-azul-claro position-relative"><li><i class="fab fa-react"></i> React</li></button>
+                            <button class="btn btn-verde-claro position-relative"><li><i class="fab fa-node-js"></i> Node.js</li></button>
+                            <button class="btn btn-azul position-relative"><li><i class="fab fa-python"></i> Python</li></button>
+                            <button class="btn btn-rojo position-relative"><li><i class="fab fa-java"></i> Java</li></button>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -504,8 +401,8 @@
         <div class="container text-white">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="section-title">
-                        <h2 class="">Contactame</h2>
+                    <div class="contact-title">
+                        <h3>Contactame</h3>
                         <p>Estoy disponible para responder tus preguntas y comentarios</p>
                     </div>
                 </div>
@@ -532,11 +429,11 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea id="message" placeholder="Mensaje" class="form-control" rows="3" required></textarea> 
+                                        <textarea  id="message" placeholder="Mensaje" class="form-control" rows="3" required></textarea> 
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <button class="px-btn theme" type="submit"><span>Via Whatsapp</span></button>
+                                    <button class="btn btn-primary" type="submit"><span>Via Whatsapp</span></button>
                                 </div>
                             </div>
                         </form>
