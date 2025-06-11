@@ -626,6 +626,32 @@ textarea {
     display: flex;
     justify-content: center;
   }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .btn-contact {
+    width: 100%;
+    text-align: center;
+  }
+
 }
 
 
