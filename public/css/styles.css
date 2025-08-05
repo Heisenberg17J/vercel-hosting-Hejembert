@@ -1,0 +1,165 @@
+/* =========================
+   GENERAL
+========================= */
+
+
+
+/* =========================
+   HEADER & NAVBAR
+========================= */
+
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+
+/* =========================
+   ABOUT ME SECTION
+========================= */
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+
+/* =========================
+   HERO ANIMATION
+========================= */
+.cube {
+    border: solid 2px #343939 !important; /* color visible */
+    background: #6f757622;                /* fondo semitransparente */
+    z-index: 50 !important;
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 1 !important;
+    animation: cube 12s linear infinite !important;
+}
+.cube:nth-child(2n) {
+  border-color: #121212;
+}
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(9) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1200px) {
+  .cube {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+@media (max-width: 991px) {
+  .cube {
+    width: 9px !important;
+    height: 9px !important;
+  }
+}
+@media (max-width: 768px) {
+
+}
+
+
+/* =========================
+   ACCORDION
+========================= */
+
+/* =========================
+   FOOTER
+========================= */
+
+
+/* =========================
+   CONTACT ANIMATION
+========================= */
+
+#contactus {
+  --s: 100px; /* control the size */
+  --c1: rgb(0, 0, 0);
+  --c2: #0b1832;
+  
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+  --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
+  background:
+    calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),
+    calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+    calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),
+    calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+    conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
+     0 0/var(--s) var(--s);
+  animation: m 3s infinite;
+}
+@keyframes m {
+  0% {
+   background-position: 
+    calc( .9*var(--s)) calc( .9*var(--s)),
+    calc(-.1*var(--s)) calc(-.1*var(--s)),
+    calc( .7*var(--s)) calc( .7*var(--s)),
+    calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  25% {
+   background-position: 
+    calc(1.9*var(--s)) calc( .9*var(--s)),
+    calc(-1.1*var(--s)) calc(-.1*var(--s)),
+    calc(1.7*var(--s)) calc( .7*var(--s)),
+    calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  50% {
+   background-position: 
+    calc(1.9*var(--s)) calc(-.1*var(--s)),
+    calc(-1.1*var(--s)) calc( .9*var(--s)),
+    calc(1.7*var(--s)) calc(-.3*var(--s)),
+    calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  75% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-.1*var(--s)),
+    calc(-2.1*var(--s)) calc( .9*var(--s)),
+    calc(2.7*var(--s)) calc(-.3*var(--s)),
+    calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  100% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-1.1*var(--s)),
+    calc(-2.1*var(--s)) calc(1.9*var(--s)),
+    calc(2.7*var(--s)) calc(-1.3*var(--s)),
+    calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
+  }
+}
+
+
